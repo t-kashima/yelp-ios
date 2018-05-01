@@ -27,6 +27,7 @@
                      limit:(NSUInteger)limit
                     offset:(NSUInteger)offset
                       sort:(YLPSortType)sort
+                    locale:(NSString *)locale
          completionHandler:(YLPSearchCompletionHandler)completionHandler {
     YLPQuery *query = [[YLPQuery alloc] initWithLocation:location];
     query.term = term;
@@ -40,6 +41,7 @@
                         term:(NSString *)term limit:(NSUInteger)limit
                       offset:(NSUInteger)offset
                         sort:(YLPSortType)sort
+                      locale:(NSString *)locale
            completionHandler:(YLPSearchCompletionHandler)completionHandler {
     YLPQuery *query = [[YLPQuery alloc] initWithCoordinate:coordinate];
     query.term = term;

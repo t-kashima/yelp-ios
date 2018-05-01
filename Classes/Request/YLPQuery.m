@@ -60,6 +60,9 @@
     if (self.term) {
         params[@"term"] = self.term;
     }
+    if (self.locale) {
+        params[@"locale"] = self.locale;
+    }
     if (self.limit) {
         params[@"limit"] = @(self.limit);
     }
