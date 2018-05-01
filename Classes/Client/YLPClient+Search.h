@@ -27,6 +27,7 @@ typedef void(^YLPSearchCompletionHandler)(YLPSearch *_Nullable search, NSError *
                      limit:(NSUInteger)limit
                     offset:(NSUInteger)offset
                       sort:(YLPSortType)sort
+                    locale:(NSString *)locale
          completionHandler:(YLPSearchCompletionHandler)completionHandler;
 
 - (void)searchWithLocation:(NSString *)location
@@ -37,6 +38,7 @@ typedef void(^YLPSearchCompletionHandler)(YLPSearch *_Nullable search, NSError *
                        limit:(NSUInteger)limit
                       offset:(NSUInteger)offset
                         sort:(YLPSortType)sort
+                      locale:(NSString *)locale
            completionHandler:(YLPSearchCompletionHandler)completionHandler;
 
 - (void)searchWithCoordinate:(YLPCoordinate *)coordinate

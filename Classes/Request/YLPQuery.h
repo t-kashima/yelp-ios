@@ -33,6 +33,11 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic, nullable) NSString *term;
 
 /**
+ Search locale, language to return the business information in.
+ */
+@property (copy, nonatomic, nullable) NSString *locale;
+
+/**
  Number of business results to return. If 0, the API maximum of 20 results will be returned.
  */
 @property (assign, nonatomic) NSUInteger limit;

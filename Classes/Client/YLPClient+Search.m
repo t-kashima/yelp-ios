@@ -27,12 +27,14 @@
                      limit:(NSUInteger)limit
                     offset:(NSUInteger)offset
                       sort:(YLPSortType)sort
+                    locale:(NSString *)locale
          completionHandler:(YLPSearchCompletionHandler)completionHandler {
     YLPQuery *query = [[YLPQuery alloc] initWithLocation:location];
     query.term = term;
     query.limit = limit;
     query.offset = offset;
     query.sort = sort;
+    query.locale = locale;
     [self searchWithQuery:query completionHandler:completionHandler];
 }
 
@@ -40,12 +42,14 @@
                         term:(NSString *)term limit:(NSUInteger)limit
                       offset:(NSUInteger)offset
                         sort:(YLPSortType)sort
+                      locale:(NSString *)locale
            completionHandler:(YLPSearchCompletionHandler)completionHandler {
     YLPQuery *query = [[YLPQuery alloc] initWithCoordinate:coordinate];
     query.term = term;
     query.limit = limit;
     query.offset = offset;
     query.sort = sort;
+    query.locale = locale;
     [self searchWithQuery:query completionHandler:completionHandler];
 }
 
